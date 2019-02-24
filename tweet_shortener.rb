@@ -39,5 +39,5 @@ end
 
 #shortened_tweet_truncator
 def shortened_tweet_truncator(tweet)
-  puts tweet.length
+  tweet.length > 140 ? tweet[0..135] + " ..." : tweet
 end
